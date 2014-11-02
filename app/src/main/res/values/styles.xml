@@ -22,8 +22,8 @@
     </style>
 
     <style name="Widget.HeaderBar.Spinner.Base" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
-        <item name="android:background">?android:selectableItemBackground</item>
-        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:dropDownSelector">?selectableItemBackground</item>
         <item name="android:divider">@null</item>
         <item name="android:dividerHeight">0dp</item>
         <item name="android:overlapAnchor">true</item>
@@ -43,4 +43,10 @@
     </style>
 
     <style name="TabIndicator" />
+
+    <style name="SpinnerItemText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
