@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tabs And Spinner Sample</string>
+    <string name="tabs_sample">Tabs Sample</string>
+    <string name="spinner_sample">Spinner Sample</string>
+</resources>

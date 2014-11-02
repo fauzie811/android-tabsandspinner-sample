@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+
+    <dimen name="spinner_width">200dp</dimen>
+    <dimen name="spinner_left_padding">16dp</dimen>
+    <dimen name="dropdown_item_height">48dp</dimen>
+</resources>
