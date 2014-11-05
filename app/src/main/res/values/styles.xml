@@ -21,20 +21,19 @@
         <item name="actionBarInsetStart">@dimen/keyline_2_minus_16dp</item>
     </style>
 
-    <style name="Widget.HeaderBar.Spinner.Base" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
-        <item name="android:background">?selectableItemBackground</item>
-        <item name="android:dropDownSelector">?selectableItemBackground</item>
-        <item name="android:divider">@null</item>
-        <item name="android:dividerHeight">0dp</item>
-        <item name="android:overlapAnchor">true</item>
-    </style>
-    <style name="Widget.HeaderBar.Spinner" parent="Widget.HeaderBar.Spinner.Base">
-    </style>
-
+    <!-- For Lollipop only -->
     <style name="ActionBarThemeOverlay" parent="">
         <item name="android:textColorPrimary">#fff</item>
         <item name="colorControlNormal">#fff</item>
         <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="Widget.HeaderBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:theme">@style/ActionBarThemeOverlay</item>
+
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:dropDownSelector">?selectableItemBackground</item>
+        <item name="android:overlapAnchor">true</item>
     </style>
 
     <style name="HeaderBar">
@@ -42,7 +41,9 @@
         <item name="android:elevation">4dp</item>
     </style>
 
-    <style name="TabIndicator" />
+    <style name="TabIndicator">
+        <item name="android:theme">@style/ActionBarThemeOverlay</item>
+    </style>
 
     <style name="SpinnerItemText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@android:color/white</item>

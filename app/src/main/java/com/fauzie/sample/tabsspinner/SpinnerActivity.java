@@ -61,8 +61,7 @@ public class SpinnerActivity extends BaseActivity {
                 view = getLayoutInflater().inflate(R.layout.spinner_item_dropdown, parent, false);
                 view.setTag("DROPDOWN");
             }
-            TextView textView = (TextView) view.findViewById(android.R.id.text1);
-            textView.setText(getItem(position).toString());
+            ((TextView) view).setText(getItem(position).toString());
             return view;
         }
 
@@ -72,8 +71,7 @@ public class SpinnerActivity extends BaseActivity {
                 view = getLayoutInflater().inflate(R.layout.spinner_item_actionbar, parent, false);
                 view.setTag("NON_DROPDOWN");
             }
-            TextView textView = (TextView) view.findViewById(android.R.id.text1);
-            textView.setText(getItem(position).toString());
+            ((TextView) view).setText(getItem(position).toString());
             return view;
         }
 
