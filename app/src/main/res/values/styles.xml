@@ -44,8 +44,7 @@
 
     <style name="TabIndicator" />
 
-    <style name="SpinnerItemText">
-        <item name="android:textSize">20sp</item>
+    <style name="SpinnerItemText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@android:color/white</item>
     </style>
 

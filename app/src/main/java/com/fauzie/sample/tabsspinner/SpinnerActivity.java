@@ -27,6 +27,7 @@ public class SpinnerActivity extends BaseActivity {
         setContentView(R.layout.activity_spinner);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("");
 
         setUpActionBarSpinner();
     }
@@ -34,13 +35,12 @@ public class SpinnerActivity extends BaseActivity {
     private void setUpActionBarSpinner() {
         Toolbar toolbar = getActionBarToolbar();
 
-        View spinnerContainer = LayoutInflater.from(this).inflate(R.layout.actionbar_spinner,
+        Spinner spinner = (Spinner) LayoutInflater.from(this).inflate(R.layout.actionbar_spinner,
                 toolbar, false);
         ActionBar.LayoutParams lp = new ActionBar.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        toolbar.addView(spinnerContainer, lp);
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        toolbar.addView(spinner, lp);
 
-        Spinner spinner = (Spinner) spinnerContainer.findViewById(R.id.actionbar_spinner);
         spinner.setAdapter(mSpinnerAdapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
