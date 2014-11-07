@@ -38,7 +38,7 @@ public class SpinnerActivity extends BaseActivity {
         Spinner spinner = (Spinner) LayoutInflater.from(this).inflate(R.layout.actionbar_spinner,
                 toolbar, false);
         ActionBar.LayoutParams lp = new ActionBar.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         toolbar.addView(spinner, lp);
 
         spinner.setAdapter(mSpinnerAdapter);

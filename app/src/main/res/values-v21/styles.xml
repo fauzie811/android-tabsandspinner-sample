@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.HeaderBar.Spinner" parent="Widget.HeaderBar.Spinner.Base">
+        <item name="android:dropDownVerticalOffset">0dp</item>
+    </style>
+</resources>

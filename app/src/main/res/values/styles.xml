@@ -28,12 +28,13 @@
         <item name="colorControlHighlight">#3fff</item>
     </style>
 
-    <style name="Widget.HeaderBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+    <style name="Widget.HeaderBar.Spinner.Base" parent="Widget.AppCompat.Spinner.DropDown.ActionBar">
         <item name="android:theme">@style/ActionBarThemeOverlay</item>
 
-        <item name="android:background">?selectableItemBackground</item>
-        <item name="android:dropDownSelector">?selectableItemBackground</item>
-        <item name="android:overlapAnchor">true</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:dropDownVerticalOffset">-52dp</item>
+    </style>
+    <style name="Widget.HeaderBar.Spinner" parent="Widget.HeaderBar.Spinner.Base">
     </style>
 
     <style name="HeaderBar">

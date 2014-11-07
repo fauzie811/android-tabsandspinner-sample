@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/text1"
-    android:paddingLeft="@dimen/spinner_left_padding"
-    android:paddingRight="4dp"
+    android:paddingLeft="@dimen/keyline_1"
+    android:paddingRight="@dimen/keyline_1"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
     android:maxWidth="@dimen/spinner_width"

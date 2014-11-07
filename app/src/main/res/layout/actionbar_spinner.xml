@@ -3,4 +3,5 @@
     style="@style/Widget.HeaderBar.Spinner"
     android:id="@+id/actionbar_spinner"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent" />
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"/>
